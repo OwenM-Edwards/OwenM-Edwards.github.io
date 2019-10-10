@@ -111,21 +111,48 @@ nav li {
 
 
 /* FOOTER SECTION DOWN */
-.footer-section{
+.footer-section {
     width:100%;
     margin:0 auto;
-    text-align: center;
-    background-color: #000000;
+    
 }
-.footer-section ul{
-    width:700px;
+
+.footer-section ul {
     list-style: none;
     display:flex;
     flex-wrap:wrap;
     margin:0 auto;
     justify-content: center;
+    margin-left:-30px;
+    margin-bottom:40px;
+}
+
+.footer-section li {
+    margin-right:30px;
+    font-size: 1.4rem;
+}
+
+
+
+
+/* .footer-section{
+    width:100%;
+    margin:0 auto;
+    background-color: #000000;
+}
+.footer-section footer{
+    width:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+}
+.footer-section ul{
+    width:100%;
+    list-style: none;
+    
+    margin:0 auto;
 }
 .footer-section li{
-    padding:50px;
-}
+    width:100%;
+} */
 /* FOOTER SECTION UP */
