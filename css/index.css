@@ -49,9 +49,12 @@ nav ul{
     flex-wrap:wrap;
     list-style: none;
     font-size:1.2rem;
+    margin-left:-30px;
+    width:100%;
 }
 nav li {
-    margin-right:100px;
+    margin-right:10px;
+    font-size: 1.4rem;
 }
 /* HEADER SECTION - UP */
 
@@ -103,38 +106,53 @@ nav li {
 .projects-section h2{
     margin:0 auto;
     background-color:var(--dark);
-    width:100%;
+    width:90%;
     padding:20px 0 20px 0;
     margin-top:50px;
+    margin-bottom:-10px;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05); */
+    z-index: 1;
+    text-shadow: 1px 2px #000000;
+    font-size:1.8rem;
+    border-radius: 5px 5px 0 0;
+}
+#projects-header{
+    /* border-top:4px solid black; */
+    margin-bottom:-10px;
+    width:100%;
+
     
+}
+.projects-section h2:nth-child(1){
+    background-color:var(--dark);
 }
 .project-card{
     background-color: var(--dark);
-    width:100%;
-    height:300px;
+    width:90%;
+    margin:0 auto;
+    height:370px;
+    
+    /* border:2px solid black; */
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+.card-a{
     background-image: url("../img/thumbnails/oakfield.jpg");
     background-position: top center;
     background-size: cover;
-    
-    
 }
-.projects-section h2:nth-child(2){
-    margin:0 auto;
-    background-color:var(--dark);
-    width:100%;
-    padding:20px 0 20px 0;
-    margin-top:0px;
+.card-b{
+    background-image: url("../img/thumbnails/keyborders.png");
+    background-position: top center;
+    background-size: cover;
 }
-#projects-header{
-    border-left:4px solid black;
-    border-right:4px solid black;
-    border-top:4px solid black;
-    
-}
+
+
 .projects-section p {
     margin:0 auto;
     margin-bottom:20px;
-    margin-top:-40px;
+    margin-top:-20px;
     width:70%;
     /* background:var(--background); */
     background-color: #1f2636;
@@ -144,6 +162,16 @@ nav li {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 /* PROJECTS SECTION - UP */
+
+.p-background {
+    height:400px;
+    width:90%;
+    margin:0 auto;
+    background-color: var(--dark);
+    margin-top:-390px;
+    z-index: -1;
+    border-radius: 0 0 5px 5px;
+}
 
 
 /* ABOUT SECTION - DOWN */
@@ -161,6 +189,8 @@ nav li {
 .footer-section {
     width:100%;
     margin:0 auto;
+    background-color: #000000 ;
+    padding-top:30px;
     
 }
 .footer-section ul {
@@ -175,6 +205,15 @@ nav li {
 .footer-section li {
     margin-right:30px;
     font-size: 1.4rem;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
 }
 
 
