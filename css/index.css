@@ -74,7 +74,7 @@ nav li {
     background-color: var(--background);
     clip-path: polygon(0 0, 100% 0, 100% 78%, 0 88%);
     color: var(--light);
-    height:500px;
+    height:700px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 .intro-section h1{
@@ -88,6 +88,24 @@ nav li {
 /* INTRO SECTION - UP */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ########################################################################### */
+
+
+
 /* PROJECTS SECTION - DOWN */
 .projects-section{
     width:100%;
@@ -95,141 +113,109 @@ nav li {
     display:flex;
     flex-wrap:wrap;
     color: var(--light);
-    
-}
-.projects-section {
-    width:100%;
     height:auto;
-    margin:0 auto;
-    display:flex;
-    flex-wrap:wrap;
-    /* display: grid; IMPLEMENT IN MEDIA QUERY LATER FOR DESKTOP
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    }
-    .card-a { grid-area: 1 / 1 / 2 / 2; }
-    .card-b { grid-area: 1 / 2 / 2 / 3; }
-    .card-c { grid-area: 2 / 2 / 3 / 3; }
-    .card-d { grid-area: 2 / 1 / 3 / 2; }  */
+    margin-top:-50px;
 }
 .projects-section h2{
     margin:0 auto;
     background-color:var(--dark);
     width:100%;
     padding:20px 0 20px 0;
-    margin-top:10px;
-    margin-bottom:-10px;
-    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05); */
     z-index: 1;
     text-shadow: 1px 2px #000000;
     font-size:2.1rem;
-    border-radius: 5px 5px 0 0;
-}
-#projects-header{
-    /* border-top:4px solid black; */
-    margin-bottom:-30px;
-    width:100%;
-}
-.project-card{
-    background-color: var(--background);
-    width:90%;
-    margin:0 auto;
-    height:470px;
-    /* border:2px solid black; */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
-}
-.card-a{
-    background-image: url("../img/thumbnails/oakfield.png");
-    background-position: top center;
-    background-size: cover;
-}
-.card-b{
-    background-image: url("../img/thumbnails/keyborders.png");
-    background-position: top center;
-    background-size: cover;
-}
-.card-c{
-    background-image: url("../img/thumbnails/oakfield.png");
-    background-position: top center;
-    background-size: cover;
-}
-.card-d{
-    background-image: url("../img/thumbnails/roboFriends.png");
-    background-position: top center;
-    background-size: cover;
-}
-.projects-section p {
-    margin:0 auto;
-    margin-bottom:80px;
-    margin-top:-20px;
-    width:85%;
-    text-align: left;
-    /* background:var(--background); */
-    background-color: var(--dark);
-    border-radius: 10px;
-    padding:20px;
-    padding-top:40px;
-    padding-bottom:40px;
-    text-shadow: 1px 2px #000000;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
-}
-/* PROJECTS SECTION - UP */
-.p-background {
-    height:480px;
-    width:100%;
-    margin:0 auto;
-    background-color: var(--background);
-    margin-top:-390px;
-    z-index: -1;
-    border-radius: 0 0 5px 5px;
-    margin-bottom:-60px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 
-.p-background:nth-of-type(2){
-    height:1050px;
-    position: relative;
-    top:-510px;
-    margin-bottom:-460px;
+.project-card{
+    background-color: var(--background);
+    width:100%;
+    margin:0 auto;
+    height:830px;
+    /* border:2px solid black; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05); */
+}
+.card-contain-a{
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
+
+}
+.card-contain-b{
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
+}
+.card-contain-c{
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
+}
+.card-contain-d{
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
+    margin-bottom:300px;
+}
+#card-a{
+    background-image: url("../img/thumbnails/oakfield.png");
+    background-position: top center;
+    background-size: cover;
+    height:400px;
+    width:90%;
+    margin:0 auto;
+}
+#card-b{
+    background-image: url("../img/thumbnails/keyborders.png");
+    background-position: top center;
+    background-size: cover;
+    height:400px;
+    width:90%;
+    margin:0 auto;
+}
+#card-c{
+    background-image: url("../img/thumbnails/oakfield.png");
+    background-position: top center;
+    background-size: cover;
+    height:400px;
+    width:90%;
+    margin:0 auto;
+}
+#card-d{
+    background-image: url("../img/thumbnails/roboFriends.png");
+    background-position: top center;
+    background-size: cover;
+    height:400px;
+    width:90%;
+    margin:0 auto;
+}
+.projects-section p{
+    margin:0 auto;
+    width:80%;
+    text-align: left;
+    opacity: 0.9;
+    /* padding:20px;
+    padding-top:40px;
+    padding-bottom:40px; */
+    text-shadow: 1px 2px #000000;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05); */
+    padding:20px 0 20px 0;
     
 }
-.p-background:nth-of-type(4){
-    height:930px;
-    position: relative;
-    top:-400px;
-    margin-bottom:-460px;
+
+.p-background{
+    background-color: var(--dark);
+    height:auto;
+    width:90%;
+    margin:0 auto;
+    z-index: -1;
+    border-radius: 0 0 10px 10px;
 }
-.p-background:nth-of-type(6){
-    height:930px;
-    position: relative;
-    top:-400px;
-    margin-bottom:-460px;
-    
-}
-.p-background:nth-of-type(8){
-    height:930px;
-    position: relative;
-    top:-400px;
-    margin-bottom:-460px;
-}
-#card-contain-a{
-    position: relative;
-    top:-10px;
-}
-#card-contain-b{
-    position: relative;
-    top:-50px;
-}
-#card-contain-c{
-    position: relative;
-    top:-100px;
-}
-#card-contain-d{
-    position: relative;
-    top:-100px;
-}
+
+
+/* ########################################################################### */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -246,6 +232,7 @@ nav li {
     background-color: var(--dark);
     border-radius: 10px;
     padding:30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -374,29 +361,3 @@ a:hover{
 }
 /* MOBILE HAMBURGER MENU - UP*/
 
-
-
-
-
-
-/* .footer-section{
-    width:100%;
-    margin:0 auto;
-    background-color: #000000;
-}
-.footer-section footer{
-    width:100%;
-    margin:0 auto;
-    display:flex;
-    justify-content: center;
-}
-.footer-section ul{
-    width:100%;
-    list-style: none;
-    
-    margin:0 auto;
-}
-.footer-section li{
-    width:100%;
-} */
-/* FOOTER SECTION UP */
