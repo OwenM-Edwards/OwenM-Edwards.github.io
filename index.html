@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Zibbly's Portfolio</title>
         <link rel="stylesheet" href="css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Oxygen&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
     </head>
     <body id="home">
         <div class="wrapper">
@@ -18,35 +18,68 @@
                         <li>Resumé</li>
                     </ul>
                 </nav>
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    <!--
+                    Some spans to act as a hamburger.
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                    <ul id="menu">
+                      <a href="./index.html"><li>HOME</li></a>
+                      <a href="./portfolio.html"><li>PORTFOLIO</li></a>
+                      <a href="./about.html"><li>CONTACT</li></a>
+                      <a href="./profile.html"><li>PROFILE</li></a>
+                    </ul>
+                 </div>
             </div>
 
             <div class="intro-section">
                 <h1>Owen Edwards</h1>
                 <h2>A Welsh Front-End Web Developer</h2>
+                <h3>quibbly.github.io</h3>
             </div>
 
             <div class="projects-section">
-                <h2 id="projects-header">My Projects</h2>
-                <h2>Oakfield Photography</h2>
-                <div class="project-card card-a">
+                <div id="card-contain-a">
+                    <h2>Oakfield Photography</h2>
+                    <div class="project-card card-a">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at numquam iusto eligendi, ipsum doloremque dolores totam odit fugit. Iusto, accusamus illo sed explicabo error dolorem illum consequatur eos earum! Lorem ipsum dolor sit amet. </br> Consectetur adipisicing elit. Aut laboriosam et harum. Necessitatibus, odio. Numquam provident sapiente necessitatibus tempora veritatis molestias praesentium quae fugiat. Velit hic eveniet tenetur aliquam reprehenderit?</p>
+                    <div class="p-background"></div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at numquam iusto eligendi, ipsum doloremque dolores totam odit fugit. Iusto, accusamus illo sed explicabo error dolorem illum consequatur eos earum!</p>
-                <div class="p-background"></div>
-                <h2>Keyborders</h2>
-                <div class="project-card card-b">
+                <div id="card-contain-b">
+                    <h2>Keyborders</h2>
+                    <div class="project-card card-b">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at numquam iusto eligendi, ipsum doloremque dolores totam odit fugit. Iusto, accusamus illo sed explicabo error dolorem illum consequatur eos earum!</p>
+                    <div class="p-background"></div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at numquam iusto eligendi, ipsum doloremque dolores totam odit fugit. Iusto, accusamus illo sed explicabo error dolorem illum consequatur eos earum!</p>
-                <div class="p-background"></div>
-                <h2>Oakfield Photography</h2>
-                <div class="project-card card-c">
+                <div id="card-contain-c">
+                    <h2>Oakfield Photography</h2>
+                    <div class="project-card card-c">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at numquam iusto eligendi, ipsum doloremque dolores totam odit fugit. Iusto, accusamus illo sed explicabo error dolorem illum consequatur eos earum!</p>
+                    <div class="p-background"></div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at numquam iusto eligendi, ipsum doloremque dolores totam odit fugit. Iusto, accusamus illo sed explicabo error dolorem illum consequatur eos earum!</p>
-                <div class="p-background"></div>
-                <h2>Robo-Friends</h2>
-                <div class="project-card card-d">
+                <div id="card-contain-d">
+                    <h2>Robo-Friends</h2>
+                    <div class="project-card card-d">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at numquam iusto eligendi, ipsum doloremque dolores totam odit fugit. Iusto, accusamus illo sed explicabo error dolorem illum consequatur eos earum!</p>
+                    <div class="p-background"></div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at numquam iusto eligendi, ipsum doloremque dolores totam odit fugit. Iusto, accusamus illo sed explicabo error dolorem illum consequatur eos earum!</p>
-                <div class="p-background"></div>
             </div>
 
             <div class="about-section">
@@ -60,9 +93,11 @@
             <div class="footer-section">
                 <footer>
                     <ul>
-                        <li>Email</li>
-                        <li>Phone</li>
-                        <li><a href="https://github.com/Quibbly">Github</a></li>
+                        <li><a href="https://github.com/Quibbly">GITHUB - QUIBBLY.GITHUB.IO</a></li>
+                        
+                        <li>PHONE - 07845954618</li>
+                        <li>EMAIL - owenhedwards@gmail.com</li>
+                        
                     </ul>
                 </footer>
             </div>
