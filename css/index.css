@@ -47,7 +47,8 @@ hr {
     margin:0 auto;
     display:flex;
     justify-content: center;
-    background-color: #000000;
+    background-color: var(--dark);
+    color: #ffffff;
 
 }
 nav ul{
@@ -361,3 +362,43 @@ a:hover{
 }
 /* MOBILE HAMBURGER MENU - UP*/
 
+
+
+
+
+@media only screen and (min-width:700px) {
+    .projects-section{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .project-card{
+        width:50%;
+    }
+    nav ul{
+        /* HIDDEN IN MOBILE MODE, MEDIA QUERY REVEALS IT */
+        display:flex; 
+        flex-wrap:wrap;
+        list-style: none;
+        font-size:1.2rem;
+        margin-left:-30px;
+        width:100%;
+    }
+    nav li {
+        margin-right:10px;
+        font-size: 1.4rem;
+    }
+    .about-section{
+        width:60%;
+        max-width:600px;
+    }
+    .projects-section h2{
+        margin-bottom:50px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .projects-section{
+        margin-right:300px;
+        margin-left:300px;
+    }
+}
