@@ -49,3 +49,39 @@ function scrollFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
+
+
+
+
+
+const cardATitle = document.querySelector(".card-contain-a h2");
+function fadeCardA(){
+    cardATitle.style.color = "rgb(253, 186, 0)";
+}
+function unFadeCardA(){
+    cardATitle.style.color = "#fbfbfb";
+}
+
+const cardBTitle = document.querySelector(".card-contain-b h2");
+function fadeCardB(){
+    cardBTitle.style.color = "rgb(253, 186, 0)";
+}
+function unFadeCardB(){
+    cardBTitle.style.color = "#fbfbfb";
+}
+
+const cardCTitle = document.querySelector(".card-contain-c h2");
+function fadeCardC(){
+    cardCTitle.style.color = "rgb(253, 186, 0)";
+}
+function unFadeCardC(){
+    cardCTitle.style.color = "#fbfbfb";
+}
+
+const cardDTitle = document.querySelector(".card-contain-d h2");
+function fadeCardD(){
+    cardDTitle.style.color = "rgb(253, 186, 0)";
+}
+function unFadeCardD(){
+    cardDTitle.style.color = "#fbfbfb";
+}
