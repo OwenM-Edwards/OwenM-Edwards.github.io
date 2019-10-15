@@ -13,12 +13,15 @@
             <div class="header-section">
                 <nav>
                     <ul>
-                        <li><a href="mailto:someone@yoursite.com?subject=Mail from Our Site">Email Us</a>   </li>
+                        <div class="tooltip"> 
+                            <span class="tooltiptext">Click to copy address to keyboard</span>
+                            <li><a id="email" href="">Email</a> </li>
+                        </div>
                         <li> <a href="https://quibbly.github.io/">Github</a> </li> 
-                        <li> <a href="./img/indevCV.pdf">Resumé</a> </li>
+                        <li> <a href="">Resumé</a> </li>
                     </ul>
                 </nav>
-                <div id="menuToggle">
+                <div class="hide" id="menuToggle">
                     <!--
                     A fake / hidden checkbox is used as click reciever,
                     so you can use the :checked selector on it.
@@ -29,9 +32,12 @@
                     They are acting like a real hamburger,
                     not that McDonalds stuff.
                     -->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <!-- <span></span>
                     <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span> -->
                     <!--
                     Too bad the menu has to be inside of the button
                     but hey, it's pure CSS magic.
@@ -47,7 +53,6 @@
             <div class="intro-section">
                 <h1>Owen Edwards</h1>
                 <h2>A Welsh Front-End Web Developer</h2>
-                <h3>quibbly.github.io</h3>
             </div>
 
             <div class="projects-section">
@@ -84,9 +89,9 @@
             <div class="footer-section">
                 <footer>
                     <ul>
-                        <li><a href="https://github.com/Quibbly">GITHUB - QUIBBLY.GITHUB.IO</a></li>
-                        <li>PHONE - 07845954618</li>
-                        <li>EMAIL - OWENHEDWARDS@GMAIL.COM</li>
+                        <li><a href="https://github.com/Quibbly">GITHUB - quibbly.github.io</a></li>
+                        <li><a href="">PHONE - 07845954618</a>  </li>
+                        <li><a id="email" href="">EMAIL - owenhedwards@gmail.com</a> </li>
                         
                     </ul>
                 </footer>

@@ -64,35 +64,7 @@ nav ul{
     width:100%;
     
 }
-/* nav li {
-    margin-right:10px;
-    font-size: 1.4rem;
-    text-decoration: underline;
-    transition: color 0.3s ease;
-    cursor: pointer;
-}
-nav li:hover{
-    text-decoration: none;
-    color: rgb(253, 186, 0);
-} */
-/* 
-a {
-    background:
-        linear-gradient(
-            to bottom, var(--mainColor) 0%,
-            var(--mainColor) 100%
-        );
-        background-position: 0 100%;
-        background-repeat: repeat-x;
-        background-size: 4px 4px;
-    color: #000;
-    text-decoration: none;
-}
-  
-a:hover {
-    background: none;
-    color: red;
-} */
+
 a{
     color: #f6f6f6;
     text-decoration: underline;
@@ -327,21 +299,11 @@ a:hover{
     font-size: 1.4rem;
     margin:5px;
     width:100%;
-    text-decoration: underline;
+    text-decoration: none;
     transition: color 0.3s ease;
     cursor: pointer;
 }
-.footer-section li:hover {
-    text-decoration: none;
-    color: rgb(253, 186, 0);
-}
-.footer-section a {
-    text-decoration: none;
-    color: var(--light);
-}
-.footer-section a:hover {
-    text-decoration: underline;
-}
+
 
 
 /* MOBILE HAMBURGER MENU - DOWN*/
@@ -360,8 +322,6 @@ a:hover{
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
 }
-
-
 /* HEADER SECTION - UP */
 #menuToggle{
     left: 10px;
@@ -371,6 +331,7 @@ a:hover{
     -webkit-user-select: none;
     z-index: 1;
 }
+
 #menuToggle input{
     cursor: pointer;
     display: block;
@@ -383,7 +344,8 @@ a:hover{
     -webkit-touch-callout: none;
     z-index: 2; /* and place it over the hamburger */
 }
-#menuToggle span{
+
+#menuToggle div{
     background: #696767;
     border-radius: 3px;
     display: block;
@@ -395,24 +357,27 @@ a:hover{
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
     width: 33px;
-    z-index: 1;
+    z-index: 2;
+    
 }
-#menuToggle span:first-child{
+
+#menuToggle div:first-child{
     transform-origin: 0% 0%;
 }
-#menuToggle span:nth-last-child(2){
+#menuToggle div:nth-last-child(2){
     transform-origin: 0% 100%;
 }
-#menuToggle input:checked ~ span{
+
+#menuToggle input:checked ~ div{
     background: #232323;
     opacity: 0.6;
     transform: rotate(45deg) translate(-2px, -1px);
 }
-#menuToggle input:checked ~ span:nth-last-child(3){
+#menuToggle input:checked ~ div:nth-last-child(3){
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
-#menuToggle input:checked ~ span:nth-last-child(2){
+#menuToggle input:checked ~ div:nth-last-child(2){
     transform: rotate(-45deg) translate(0, -1px);
 }
 #menu li{
@@ -424,8 +389,13 @@ a:hover{
 }
 /* MOBILE HAMBURGER MENU - UP*/
 
-
-
+#menu a{
+    color: #1f1e1e;
+}
+#menu a:hover{
+    color: rgb(253, 186, 0);
+    text-decoration: none;
+}
 
 
 @media only screen and (min-width:700px) {
@@ -488,4 +458,48 @@ a:hover{
     .intro-section{
         margin-bottom:200px;
     }
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: var(--dark);
+    color:  rgb(253, 186, 0);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    top: 160%;
+    left: -20px;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    z-index: 1;
+    opacity: 0;
+  transition: opacity 1s;
+}
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; /* At the bottom of the tooltip */
+    left: 100px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(253, 186, 0) transparent;
+  }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
