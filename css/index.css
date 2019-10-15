@@ -3,6 +3,7 @@
     --dark:#333;
     --light:#fbfbfb ;
     --background:#1e2432;
+    --highlight: rgb(253, 186, 0);
 }
 html {
     box-sizing: border-box;
@@ -25,14 +26,6 @@ body {
 img {
     max-width: 100%;
 } 
-hr {
-    border: 0;
-    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    height: 1.2px;
-}
 .wrapper {
     display:flex;
     flex-wrap:wrap;
@@ -45,127 +38,85 @@ hr {
 
 /* HEADER SECTION - DOWN */
 .header-section{
-    width:100%;
-    margin:0 auto;
-    display:flex;
-    justify-content: center;
     background-color: var(--dark);
-    color: #ffffff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
-
+    color: var(--light);
+    display:flex;
+    margin:0 auto;
+    justify-content: center;
+    width:100%;
 }
 nav ul{
     /* HIDDEN IN MOBILE MODE, MEDIA QUERY REVEALS IT */
     display:none; 
     flex-wrap:wrap;
-    list-style: none;
     font-size:1.2rem;
+    list-style: none;
     margin-left:-30px;
     width:100%;
-    
 }
-
-a{
-    color: #f6f6f6;
-    text-decoration: underline;
-    transition: color 0.3s ease;
+#navEmail{
     cursor: pointer;
-}
-a:visited {
-    color: #f6f6f6;
-}
-a:hover{
-    color: rgb(253, 186, 0);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
-
-#menu a{
-    color: #1f1e1e;
-}
-#menu a:hover{
+#navEmail:hover{
     color: rgb(253, 186, 0);
-    text-decoration: none;
+    text-decoration: underline;
 }
-
-
-
-
-
 /* HEADER SECTION - UP */
 
 
 /* INTRO SECTION - DOWN */
 .intro-section{
-    width:100%;
-    margin-top:0px;
-    margin-bottom:-9px;
     background-color: var(--background);
-    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 88%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+    clip-path: polygon(100% 0, 100% 90%, 78% 78%, 0 92%, 0 0);
     color: var(--light);
     height:700px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+    margin-top:0px;
+    margin-bottom:-9px;
+    width:100%;
 }
 .intro-section h1{
     font-size: 3.4rem;
     margin-top:70px;
 }
 .intro-section h2{
-    width:80%;
     margin:0 auto;
+    width:80%;
 }
 /* INTRO SECTION - UP */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ########################################################################### */
-
-
-
 /* PROJECTS SECTION - DOWN */
 .projects-section{
-    width:100%;
-    margin:0 auto;
+    color: var(--light);
     display:flex;
     flex-wrap:wrap;
-    color: var(--light);
     height:auto;
+    margin:0 auto;
     margin-top:-50px;
+    width:100%;
 }
 .projects-section h2{
-    margin:0 auto;
     background-color:var(--dark);
-    width:100%;
-    padding:20px 0 20px 0;
-    z-index: 1;
-    text-shadow: 1px 2px #000000;
-    font-size:2.1rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+    font-size:2.1rem;
+    margin:0 auto;
+    padding:20px 0 20px 0;
+    text-shadow: 1px 2px #000000;
+    width:100%;
+    z-index: 1;
 }
-
 .project-card{
     background-color: var(--background);
-    width:100%;
     margin:0 auto;
     height:830px;
-    
-    /* border:2px solid black; */
-    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05); */
+    width:100%;
 }
-
 .card-contain-a{
     clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
-
 }
 .card-contain-b{
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
@@ -182,118 +133,128 @@ a:hover{
     background-position: top center;
     background-size: cover;
     height:400px;
-    width:90%;
     margin:0 auto;
     opacity:0.85;
+    width:90%;
 }
 #card-b{
     background-image: url("../img/thumbnails/keyborders.png");
     background-position: top center;
     background-size: cover;
     height:400px;
-    width:90%;
     margin:0 auto;
     opacity:0.85;
+    width:90%;
 }
 #card-c{
     background-image: url("../img/thumbnails/oakfield.png");
     background-position: top center;
     background-size: cover;
     height:400px;
-    width:90%;
     margin:0 auto;
     opacity:0.85;
+    width:90%;
 }
 #card-d{
     background-image: url("../img/thumbnails/roboFriends.png");
     background-position: top center;
     background-size: cover;
     height:400px;
-    width:90%;
     margin:0 auto;
     opacity:0.85;
+    width:90%;
 }
 .projects-section p{
     margin:0 auto;
-    width:80%;
-    text-align: left;
     opacity: 0.9;
-    /* padding:20px;
-    padding-top:40px;
-    padding-bottom:40px; */
-    text-shadow: 1px 2px #000000;
-    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05); */
     padding:20px 0 20px 0;
-    
+    text-shadow: 1px 2px #000000;
+    text-align: left;
+    width:80%;
 }
-
 .p-background{
     background-color: var(--dark);
+    border-radius: 0 0 10px 10px;
+    margin:0 auto;
     height:auto;
     width:90%;
-    margin:0 auto;
     z-index: -1;
-    border-radius: 0 0 10px 10px;
 }
-
-
-/* ########################################################################### */
-
-
-
-
-
-
-
-
-
-
-
-
+/* PROJECTS SECTION - UP */
 
 
 /* ABOUT SECTION - DOWN */
-.about-section {
-    width:70%;
+.about-section{
+    background-color: var(--dark);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+    color: var(--light);
+    font-size:1.4rem;
     margin:0 auto;
     margin-top:-200px;
     margin-bottom:100px;
-    font-size:1.4rem;
-    color: var(--light);
-    text-shadow: 1px 2px #1b1b1b;
-    background-color: var(--dark);
-    border-radius: 10px;
     padding:30px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+    text-shadow: 1px 2px #1b1b1b;
+    width:70%;
 }
-
-
-
-
+#about-section-2{
+    margin-top:-90px;
+    margin-bottom:150px;
+}
 /* ABOUT SECTION - UP */
 
 
-/* FOOTER SECTION DOWN */
-.footer-section {
+/* UP ARROW */
+#arrowContain{
     width:100%;
     margin:0 auto;
-    background-color: var(--background) ;
+}
+#upArrow{
+    background-color:var(--light);
+    clip-path: polygon(5% 45%, 50% 5%, 95% 46%, 96% 90%, 50% 53%, 5% 88%);
+    height:100px;
+    margin:0 auto;
+    position: relative;
+    top:20px;
+    transition: background-color .2s ease;
+    width:100px;
+}
+#arrowCircle{
+    background-color: var(--background);
+    border-radius: 900px;
+    bottom:-90px;
+    height:150px;
+    margin:0 auto;
+    position: relative;
+    transition: all .2s ease-in-out;
+    width:150px;
+}
+#arrowCircle:hover > #upArrow{ background-color:var(--highlight); }
+#arrowCircle:hover{
+    transform: scale(1.1);
+}
+/* UP ARROW */
+
+
+/* FOOTER SECTION */
+.footer-section {
+    background-color: var(--background);
+    margin:0 auto;
     padding-top:30px;
-    
-    
+    width:100%;
 }
 .footer-section ul {
-    list-style: none;
+    color: var(--light);
     display:flex;
     flex-wrap:wrap;
-    margin:0 auto;
     justify-content: center;
+    list-style: none;
+    margin:0 auto;
     margin-left:-30px;
     margin-bottom:10px;
+    margin-top:70px;
     padding-bottom:20px;
-    color: var(--light);
 }
-
 .footer-section li {
     /* margin-right:30px; */
     font-size: 1.4rem;
@@ -303,10 +264,10 @@ a:hover{
     transition: color 0.3s ease;
     cursor: pointer;
 }
+/* FOOTER SECTION */
 
 
-
-/* MOBILE HAMBURGER MENU - DOWN*/
+/* MOBILE HAMBURGER MENU */
 #menu{
     background: #ededed;
     list-style-type: none;
@@ -322,7 +283,6 @@ a:hover{
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
 }
-/* HEADER SECTION - UP */
 #menuToggle{
     left: 10px;
     position: fixed;
@@ -331,7 +291,6 @@ a:hover{
     -webkit-user-select: none;
     z-index: 1;
 }
-
 #menuToggle input{
     cursor: pointer;
     display: block;
@@ -344,8 +303,7 @@ a:hover{
     -webkit-touch-callout: none;
     z-index: 2; /* and place it over the hamburger */
 }
-
-#menuToggle div{
+#menuToggle span{
     background: #696767;
     border-radius: 3px;
     display: block;
@@ -357,27 +315,24 @@ a:hover{
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
     width: 33px;
-    z-index: 2;
-    
+    z-index: 1;
 }
-
-#menuToggle div:first-child{
+#menuToggle span:first-child{
     transform-origin: 0% 0%;
 }
-#menuToggle div:nth-last-child(2){
+#menuToggle span:nth-last-child(2){
     transform-origin: 0% 100%;
 }
-
-#menuToggle input:checked ~ div{
+#menuToggle input:checked ~ span{
     background: #232323;
     opacity: 0.6;
     transform: rotate(45deg) translate(-2px, -1px);
 }
-#menuToggle input:checked ~ div:nth-last-child(3){
+#menuToggle input:checked ~ span:nth-last-child(3){
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
-#menuToggle input:checked ~ div:nth-last-child(2){
+#menuToggle input:checked ~ span:nth-last-child(2){
     transform: rotate(-45deg) translate(0, -1px);
 }
 #menu li{
@@ -387,7 +342,23 @@ a:hover{
 #menuToggle input:checked ~ ul{
     transform: none;
 }
-/* MOBILE HAMBURGER MENU - UP*/
+/* MOBILE HAMBURGER MENU */
+
+
+/* LINK COLOR CHANGE */
+a{
+    color: var(--light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+a:visited {
+    color: var(--light);
+}
+a:hover{
+    color: rgb(253, 186, 0);
+    text-decoration: underline;
+}
 
 #menu a{
     color: #1f1e1e;
@@ -396,6 +367,7 @@ a:hover{
     color: rgb(253, 186, 0);
     text-decoration: none;
 }
+/* LINK COLOR CHANGE */
 
 
 @media only screen and (min-width:700px) {
@@ -467,14 +439,13 @@ a:hover{
     display: inline-block;
     border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
-
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 220px;
     background-color: var(--dark);
     color:  rgb(253, 186, 0);
     text-align: center;
-    padding: 5px 0;
+    padding:10px;
     border-radius: 6px;
    
     /* Position the tooltip text - see examples below! */
@@ -484,7 +455,7 @@ a:hover{
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
     z-index: 1;
     opacity: 0;
-  transition: opacity 1s;
+    transition: opacity 1s;
 }
 .tooltip:hover .tooltiptext {
     opacity: 1;
@@ -498,8 +469,7 @@ a:hover{
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent rgb(253, 186, 0) transparent;
-  }
-
+}
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }

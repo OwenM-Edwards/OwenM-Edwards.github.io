@@ -14,11 +14,11 @@
                 <nav>
                     <ul>
                         <div class="tooltip"> 
-                            <span class="tooltiptext">Click to copy address to keyboard</span>
-                            <li><a id="email" href="">Email</a> </li>
+                            <span id="toolTipText" class="tooltiptext">Click to copy address to clipboard</span>
+                            <li id="navEmail">Email</li>
                         </div>
-                        <li> <a href="https://quibbly.github.io/">Github</a> </li> 
-                        <li> <a href="">Resumé</a> </li>
+                        <li> <a href="https://github.com/Quibbly">Github</a> </li> 
+                        <li> <a href="./img/indevCV.pdf">Resumé</a> </li>
                     </ul>
                 </nav>
                 <div class="hide" id="menuToggle">
@@ -32,12 +32,9 @@
                     They are acting like a real hamburger,
                     not that McDonalds stuff.
                     -->
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <!-- <span></span>
                     <span></span>
-                    <span></span> -->
+                    <span></span>
+                    <span></span>
                     <!--
                     Too bad the menu has to be inside of the button
                     but hey, it's pure CSS magic.
@@ -49,10 +46,16 @@
                     </ul>
                  </div>
             </div>
-
             <div class="intro-section">
                 <h1>Owen Edwards</h1>
                 <h2>A Welsh Front-End Web Developer</h2>
+            </div>
+
+            <div class="about-section" id="about-section-2">
+                <div class="info-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorum molestiae vitae totam non corrupti deleniti. Ratione non recusandae, ex exercitationem animi labore adipisci officiis nesciunt et fugiat illum? Modi!</p>
+                </div>
+
             </div>
 
             <div class="projects-section">
@@ -85,14 +88,19 @@
 
             </div>
 
+            <div id="arrowContain">
+                <div id="arrowCircle" onclick="topFunction()">
+                    <div id="upArrow"></div>
+                </div>
+            </div>
+
 
             <div class="footer-section">
                 <footer>
                     <ul>
                         <li><a href="https://github.com/Quibbly">GITHUB - quibbly.github.io</a></li>
                         <li><a href="">PHONE - 07845954618</a>  </li>
-                        <li><a id="email" href="">EMAIL - owenhedwards@gmail.com</a> </li>
-                        
+                        <li id="navEmail">EMAIL - owenhedwards@gmail.com</li>
                     </ul>
                 </footer>
             </div>
