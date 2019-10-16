@@ -36,16 +36,8 @@ for(var i=0;i<emailLink.length;i++){
 
 
 const upArrow = document.getElementById("arrowCircle");
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-}
-  
   // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
+topFunction = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
@@ -55,33 +47,33 @@ function scrollFunction() {
 
 
 const cardATitle = document.querySelector(".card-contain-a h2");
-function fadeCardA(){
+fadeCardA = () => {
     cardATitle.style.color = "rgb(253, 186, 0)";
 }
-function unFadeCardA(){
+unFadeCardA = () => {
     cardATitle.style.color = "#fbfbfb";
 }
 
 const cardBTitle = document.querySelector(".card-contain-b h2");
-function fadeCardB(){
+fadeCardB = () => {
     cardBTitle.style.color = "rgb(253, 186, 0)";
 }
-function unFadeCardB(){
+unFadeCardB = () => {
     cardBTitle.style.color = "#fbfbfb";
 }
 
 const cardCTitle = document.querySelector(".card-contain-c h2");
-function fadeCardC(){
+fadeCardC = () => {
     cardCTitle.style.color = "rgb(253, 186, 0)";
 }
-function unFadeCardC(){
+unFadeCardC = () => {
     cardCTitle.style.color = "#fbfbfb";
 }
 
 const cardDTitle = document.querySelector(".card-contain-d h2");
-function fadeCardD(){
+fadeCardD = () => {
     cardDTitle.style.color = "rgb(253, 186, 0)";
 }
-function unFadeCardD(){
+unFadeCardD = () => {
     cardDTitle.style.color = "#fbfbfb";
 }
