@@ -7,11 +7,12 @@
         <title>Zibbly's Portfolio</title>
         <link rel="stylesheet" href="css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+        <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://kit.fontawesome.com/12c75d612a.js" crossorigin="anonymous"></script>
     </head>
     <body id="home">
         <div class="wrapper">
-            <div class="header-section">
+            <div class="header-section headline">
                 <nav>
                     <ul>
                         <div class="tooltip"> 
@@ -193,7 +194,15 @@
 
         <!-- WRAPPER ENDS HERE -->
         </div>
-
+        <script>
+            ScrollReveal().reveal('.header-section',{ delay: 100 });
+            ScrollReveal().reveal('.intro-section',{ delay: 100 });
+            ScrollReveal().reveal('.skills-section',{ delay: 100 });
+            ScrollReveal().reveal('.project-card',{ delay: 100 });
+            ScrollReveal().reveal('.about-section',{ delay: 100 });
+            ScrollReveal().reveal('#arrowContain',{ delay: 100 });
+            ScrollReveal().reveal('.footer-section',{ delay: 100 });
+        </script>
         <script src="js/index.js"></script>
     </body>
 </html>
