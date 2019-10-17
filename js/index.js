@@ -46,6 +46,9 @@ topFunction = () => {
 
 
 
+
+
+
 const cardATitle = document.querySelector(".card-contain-a h2");
 fadeCardA = () => {
     cardATitle.style.color = "rgb(253, 186, 0)";
@@ -77,3 +80,4 @@ fadeCardD = () => {
 unFadeCardD = () => {
     cardDTitle.style.color = "#fbfbfb";
 }
+

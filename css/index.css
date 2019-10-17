@@ -220,7 +220,6 @@ nav ul{
     transition-timing-function: ease-in;
     transition: 0.6s;
     transform: translatex(-130%);
-
     height:110%;
     background-color: var(--dark);
     padding-top:20px;
@@ -228,11 +227,15 @@ nav ul{
     text-align: center;
     padding-left:20%;
     padding-right:20%;
+    margin-top:-30px;
 }
 .card-left:hover .details{
+    transform: translatex(-80%);
+}
+.card-left .details:hover{
     transition-timing-function: ease-out;
     transition: 0.4s;
-    transform: translatex(0);
+    transform: translatex(-5%);
 }
 .card-left .details a{
     display:flex;
@@ -251,6 +254,7 @@ nav ul{
     box-shadow: 0px 0px 5px var(--highlight);
     background-color: rgba(253, 186, 0, 0.466);
 }
+
 /* RIGHT CARDS */
 .card-right{
     overflow: hidden;
@@ -269,9 +273,12 @@ nav ul{
     text-align: center;
 }
 .card-right:hover .details{
+    transform: translatex(80%);
+}
+.card-right .details:hover{
     transition-timing-function: ease-out;
     transition: 0.4s;
-    transform: translatex(0);
+    transform: translatex(5%);
 }
 .card-right .details a{
     display:flex;
@@ -279,6 +286,24 @@ nav ul{
     width:60%;
     margin:0 auto;
 }
+.card-left .details i {
+    position: relative;
+    right:-74%;
+    bottom:-35%;
+    font-size: 3.8rem;
+    transition: all .15s ease-in-out;
+}
+.card-right .details i {
+    position: relative;
+    left:-74%;
+    bottom:-35%;
+    font-size: 3.8rem;
+    transition: all .15s ease-in-out;
+}
+.details i:hover {
+    transform: scale(1.1);
+}
+
 .card-right .details img{
     margin-top:18px;
     margin-right:20px;
