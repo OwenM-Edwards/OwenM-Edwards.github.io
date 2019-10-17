@@ -575,7 +575,7 @@ a:hover{
         width:50%;
     }
     .header-bar{
-        width:100%;
+        width:90%;
         height:50px;
         background-color:var(--dark);
         margin:0 auto;
@@ -626,6 +626,18 @@ a:hover{
     }
     .intro-section {
         margin-bottom:100px;
+    }
+    .card-contain-a{
+        border-top-left-radius: 10px;
+    }
+    .card-contain-b{
+        border-top-right-radius: 10px;
+    }
+    .card-contain-c{
+        border-top-left-radius: 10px;
+    }
+    .card-contain-d{
+        border-top-right-radius: 10px;
     }
 }
 @media only screen and (min-width:1500px) {
