@@ -213,13 +213,13 @@ nav ul{
 }
 /* CARD ANIMATIONS */
 /* LEFT CARDS */
-.card-left{
+.card{
     overflow: hidden;
 }
 .card-left .details {
     transition-timing-function: ease-in;
     transition: 0.6s;
-    transform: translatex(-130%);
+    
     height:110%;
     background-color: var(--dark);
     padding-top:20px;
@@ -229,14 +229,39 @@ nav ul{
     padding-right:20%;
     margin-top:-30px;
 }
-.card-left:hover .details{
+.left-details-hidden{
+    transform: translatex(-130%);
+}
+.left-details-tab{
     transform: translatex(-80%);
 }
-.card-left .details:hover{
+.left-details-full{
+    transform: translatex(-10%);
+}
+.card-left .fa-chevron-left{
+    display:none;
+}
+.right-details-hidden{
+    transform: translatex(130%);
+}
+.right-details-tab{
+    transform: translatex(80%);
+}
+.right-details-full{
+    transform: translatex(10%);
+}
+.card-right .fa-chevron-right{
+    display:none;
+}
+
+/* .card-left:hover .details{
+    transform: translatex(-80%);
+} */
+/* .card-left .details:hover{
     transition-timing-function: ease-out;
     transition: 0.4s;
     transform: translatex(-5%);
-}
+} */
 .card-left .details a{
     display:flex;
     flex-wrap:wrap;
@@ -256,30 +281,23 @@ nav ul{
 }
 
 /* RIGHT CARDS */
-.card-right{
+.card{
     overflow: hidden;
 }
 .card-right .details {
+
     transition-timing-function: ease-in;
     transition: 0.6s;
-    transform: translatex(130%);
-
     height:110%;
     background-color: var(--dark);
     padding-top:20px;
     padding-left:20%;
     padding-right:20%;
+    margin-top:-30px;
     color: var(--highlight);
     text-align: center;
 }
-.card-right:hover .details{
-    transform: translatex(80%);
-}
-.card-right .details:hover{
-    transition-timing-function: ease-out;
-    transition: 0.4s;
-    transform: translatex(5%);
-}
+
 .card-right .details a{
     display:flex;
     flex-wrap:wrap;
