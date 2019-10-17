@@ -233,10 +233,10 @@ nav ul{
     transform: translatex(-130%);
 }
 .left-details-tab{
-    transform: translatex(-80%);
+    transform: translatex(-87%);
 }
 .left-details-full{
-    transform: translatex(-10%);
+    transform: translatex(-0%);
 }
 .card-left .fa-chevron-left{
     display:none;
@@ -245,10 +245,10 @@ nav ul{
     transform: translatex(130%);
 }
 .right-details-tab{
-    transform: translatex(80%);
+    transform: translatex(87%);
 }
 .right-details-full{
-    transform: translatex(10%);
+    transform: translatex(0%);
 }
 .card-right .fa-chevron-right{
     display:none;
