@@ -10,15 +10,25 @@ html {
     height:100%;
     scroll-behavior: smooth;
 }
+.particles {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:-1;
+}
 body {
     background:var(--light);
     line-height: 1.4;
     margin:0;
     width:100%;
-    background-image: url("../img/background2.jpg");
+    background-image: url("../img/patterns/connectwork.png");
     background-position: fixed;
-    background-size: cover;
-    opacity:0.97;
+    /* background-blend-mode: luminosity; */
+    background-repeat: repeat;
+
+    opacity:0.85;
     font-family: 'Oswald', sans-serif;
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -82,7 +92,7 @@ nav ul{
     height:auto;
     background-color: var(--dark);
     color: var(--light);    
-    margin-bottom:200px;
+    margin-bottom:170px;
     padding:30px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
@@ -119,6 +129,15 @@ nav ul{
 
 
 /* PROJECTS SECTION - DOWN */
+#projects-header{
+    margin:0 auto;
+    width:100%;
+    color: #ededed;
+    font-size: 1.9rem;
+    height:100px;
+    background-color: var(--dark);
+    margin-bottom:50px;
+}
 .projects-section{
     color: var(--light);
     display:flex;
@@ -434,6 +453,7 @@ nav ul{
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     width: 200px;
     -webkit-font-smoothing: antialiased;
+    border-radius: 5px;
     /* to stop flickering of text in safari */
 }
 #menuToggle{
@@ -567,6 +587,9 @@ a:hover{
 
 /* MEDIA QUERIES */
 @media only screen and (min-width:700px) {
+    .skills-section{
+        margin-top:-50px;
+    }
     .projects-section{
         display:flex;
         flex-wrap:wrap;
@@ -579,6 +602,8 @@ a:hover{
         height:50px;
         background-color:var(--dark);
         margin:0 auto;
+        margin-top:50px;
+        border-radius: 10px 10px 0 0;
     }
     nav ul{
         /* HIDDEN IN MOBILE MODE, MEDIA QUERY REVEALS IT */
@@ -645,7 +670,15 @@ a:hover{
         margin-right:100px;
         margin-left:100px;
     }
+    #projects-header{
+        margin-right:100px;
+        margin-left:100px;
+    }
     .intro-section{
         margin-bottom:200px;
+    }
+    .skills-section{
+        max-width: 700px;
+        margin-top:-100px;
     }
 }

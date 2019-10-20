@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Zibbly's Portfolio</title>
+        <title>Owen Edwards</title>
         <link rel="stylesheet" href="css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://kit.fontawesome.com/12c75d612a.js" crossorigin="anonymous"></script>
     </head>
     <body id="home">
+
         <div class="wrapper">
+                
             <div class="header-section headline">
                 <nav>
                     <ul>
@@ -49,10 +51,13 @@
                  </div>
             </div>
             <div class="intro-section">
+                <canvas class="particles"></canvas>
                 <h1>Owen Edwards</h1>
                 <h2>A Welsh Front-End Web Developer</h2>
             </div>
 
+
+            
             <div class="skills-section">
                 <h2>What do i use?</h2>
                 <div class="skill-icons">
@@ -86,11 +91,15 @@
                         <p>Boostrap4</p>
                     </div>
                 </div>
-                <p id="skill-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorum molestiae vitae totam non corrupti deleniti. Ratione non recusandae, ex exercitationem animi labore adipisci officiis nesciunt et fugiat illum? Modi!</p>
+                <!-- <p id="skill-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorum molestiae vitae totam non corrupti deleniti. Ratione non recusandae, ex exercitationem animi labore adipisci officiis nesciunt et fugiat illum? Modi!</p> -->
 
             </div>
 
+            <div id="projects-header">
+                <h3 >Projects</h3>
+            </div>
             <div class="projects-section">
+                
                 <div class="project-card card-contain-a">
                     <div class="header-bar"></div>
                     <h2>Oakfield Photography</h2>
@@ -202,14 +211,27 @@
 
         <!-- WRAPPER ENDS HERE -->
         </div>
+
+        <script src="./js/particles.min.js"></script>
+        <script> 
+            window.onload = function() {
+                Particles.init({
+                  selector: '.particles',
+                  maxParticles: 150,
+                  color: '#666666',
+                  connectParticles:true,
+                  speed:0.3,
+                });
+            };
+        </script>
         <script>
-            ScrollReveal().reveal('.header-section',{ delay: 70 });
-            ScrollReveal().reveal('.intro-section',{ delay: 70 });
-            ScrollReveal().reveal('.skills-section',{ delay: 70 });
-            ScrollReveal().reveal('.project-card',{ delay: 70 });
-            ScrollReveal().reveal('.about-section',{ delay: 70 });
-            ScrollReveal().reveal('#arrowContain',{ delay: 70 });
-            ScrollReveal().reveal('.footer-section',{ delay: 70 });
+            ScrollReveal().reveal('.header-section',{ delay: 60 });
+            ScrollReveal().reveal('.intro-section',{ delay: 60 });
+            ScrollReveal().reveal('.skills-section',{ delay: 60 });
+            ScrollReveal().reveal('.project-card',{ delay: 60 });
+            ScrollReveal().reveal('.about-section',{ delay: 60 });
+            ScrollReveal().reveal('#arrowContain',{ delay: 60 });
+            ScrollReveal().reveal('.footer-section',{ delay: 60 });
         </script>
         <script src="js/index.js"></script>
     </body>
