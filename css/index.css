@@ -740,3 +740,18 @@ a:hover{
     }
 }
 
+
+button{ 
+    background-color: rgb(85, 85, 85);;
+    color: var(--light);
+    padding:10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin-right:20px;
+    width:100px;
+    border: none;
+
+}
+button:hover{
+    background-color:var(--highlight); /* Green */
+}
