@@ -71,7 +71,7 @@ nav ul{
     color: var(--light);
     height:700px;
     margin-top:0px;
-    margin-bottom:-9px;
+    margin-bottom:200px;
     width:100%;
 }
 .intro-section h1{
@@ -85,7 +85,16 @@ nav ul{
 /* INTRO SECTION - UP */
 
 
+/* FIRST ABOUT SECTION */
+
+/* FIRST ABOUT SECTION */
+
+
 /* SKILLS SECTION - DOWN */
+.skills-section-container{
+    width:100%;
+    margin:0 auto;
+}
 .skills-section{
     width:70%;
     margin:0 auto;
@@ -612,6 +621,7 @@ a:hover{
 @media only screen and (min-width:700px) {
     .skills-section{
         margin-top:-50px;
+        max-width: 600px;
     }
     .projects-section{
         display:flex;
@@ -686,6 +696,19 @@ a:hover{
     .card-contain-d{
         border-top-right-radius: 10px;
     }
+    .first-about{
+        margin:0 auto;
+        margin-bottom:90px;
+        margin-top:-80px;
+        width:100%;
+    }
+    .skills-section-container{
+        width:100%;
+        margin:0 auto;
+    }
+    #projects-header{
+        margin-top:-70px;
+    }
 }
 @media only screen and (min-width:1500px) {
     .projects-section{
@@ -695,12 +718,25 @@ a:hover{
     #projects-header{
         margin-right:100px;
         margin-left:100px;
+        margin-top:-10px;
     }
     .intro-section{
         margin-bottom:200px;
     }
+    .first-about{
+        margin-bottom:150px;
+        margin-top:-170px;
+    }
+    .skills-section-container{
+        width:80%;
+        margin:0 auto;
+    }
     .skills-section{
-        max-width: 700px;
+        margin:0 auto;
         margin-top:-100px;
+        
+        max-width:600px;
+        margin-bottom:100px;
     }
 }
+
