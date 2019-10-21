@@ -276,7 +276,7 @@ nav ul{
 .card-right .fa-chevron-right{
     display:none;
 }
-.project-card:hover h2 {
+.card-container:hover h2 {
     color: var(--highlight);
 }
 
