@@ -1,3 +1,5 @@
+
+// COPY TO CLIPBOARD STUFF
 const copyToClipboard = str => {
     const el = document.createElement('textarea');  // Create a <textarea> element
     el.value = str;                                 // Set its value to the string that you want copied
@@ -26,21 +28,24 @@ for(var i=0;i<emailLink.length;i++){
         document.getElementById("toolTipText").innerHTML = "Email address has been copied to your clipboard.";
     })
 }
-
 // Changes text back to default when user moves mouse away
 for(var i=0;i<emailLink.length;i++){
     emailLink[i].addEventListener("mouseout", function() {
         document.getElementById("toolTipText").innerHTML = "Click to copy address to clipboard.";
     })
 }
+// COPY TO CLIPBOARD STUFF
 
 
+// SCROLL TO TOP BUTTON
 const upArrow = document.getElementById("arrowCircle");
   // When the user clicks on the button, scroll to the top of the document
 topFunction = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
+// SCROLL TO TOP BUTTON
+
 
 
 
@@ -50,7 +55,7 @@ const cardADetails = document.querySelector(".cardADetails");
 const cardAArrow1 = document.querySelector(".cardADetails .fa-chevron-right");
 const cardAArrow2 = document.querySelector(".cardADetails .fa-chevron-left");
 const cardA = document.querySelector("#card-a");
-const cardATitle = document.querySelector(".card-contain-a h2");
+
 
 const cardBDetails = document.querySelector(".cardBDetails");
 const cardBArrow1 = document.querySelector(".cardBDetails .fa-chevron-left");
@@ -155,38 +160,4 @@ cardDArrow2.addEventListener("click", function(){
 
 
 
-
-
-
-
-fadeCardA = () => {
-    cardATitle.style.color = "rgb(253, 186, 0)";
-}
-unFadeCardA = () => {
-    cardATitle.style.color = "#fbfbfb";
-}
-
-const cardBTitle = document.querySelector(".card-contain-b h2");
-fadeCardB = () => {
-    cardBTitle.style.color = "rgb(253, 186, 0)";
-}
-unFadeCardB = () => {
-    cardBTitle.style.color = "#fbfbfb";
-}
-
-const cardCTitle = document.querySelector(".card-contain-c h2");
-fadeCardC = () => {
-    cardCTitle.style.color = "rgb(253, 186, 0)";
-}
-unFadeCardC = () => {
-    cardCTitle.style.color = "#fbfbfb";
-}
-
-const cardDTitle = document.querySelector(".card-contain-d h2");
-fadeCardD = () => {
-    cardDTitle.style.color = "rgb(253, 186, 0)";
-}
-unFadeCardD = () => {
-    cardDTitle.style.color = "#fbfbfb";
-}
 

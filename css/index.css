@@ -28,7 +28,7 @@ body {
     /* background-blend-mode: luminosity; */
     background-repeat: repeat;
 
-    opacity:0.85;
+    opacity:0.89;
     font-family: 'Oswald', sans-serif;
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -179,30 +179,30 @@ nav ul{
     margin-bottom:300px;
 }
 #card-a{
-    background-image: url("../img/thumbnails/oakfield.png");
+    background-image: url("../img/thumbnails/oakfieldIm.png");
     background-position: top center;
     background-size: cover;
     height:400px;
     margin:0 auto;
-    opacity:0.85;
+    opacity:0.95;
     width:90%;
 }
 #card-b{
-    background-image: url("../img/thumbnails/keyborders.png");
-    background-position: top center;
-    background-size: cover;
-    height:400px;
-    margin:0 auto;
-    opacity:0.85;
-    width:90%;
-}
-#card-c{
     background-image: url("../img/thumbnails/brainApp.jpg");
     background-position: top center;
     background-size: cover;
     height:400px;
     margin:0 auto;
-    opacity:0.85;
+    opacity:0.95;
+    width:90%;
+}
+#card-c{
+    background-image: url("../img/thumbnails/keyborders.png");
+    background-position: top center;
+    background-size: cover;
+    height:400px;
+    margin:0 auto;
+    opacity:0.95;
     width:90%;
 }
 #card-d{
@@ -211,7 +211,7 @@ nav ul{
     background-size: cover;
     height:400px;
     margin:0 auto;
-    opacity:0.85;
+    opacity:0.95;
     width:90%;
 }
 .projects-section p{
@@ -221,6 +221,7 @@ nav ul{
     text-shadow: 1px 2px #000000;
     text-align: left;
     width:80%;
+    max-width: 500px;
 }
 .p-background{
     background-color: var(--dark);
@@ -229,7 +230,9 @@ nav ul{
     height:auto;
     width:90%;
     z-index: -1;
+    min-height: 150px;
 }
+
 /* CARD ANIMATIONS */
 /* LEFT CARDS */
 .card{
@@ -244,8 +247,8 @@ nav ul{
     padding-top:20px;
     color: var(--highlight);
     text-align: center;
-    padding-left:20%;
-    padding-right:20%;
+    padding-left:10%;
+    padding-right:10%;
     margin-top:-30px;
 }
 .left-details-hidden{
@@ -259,6 +262,7 @@ nav ul{
 }
 .card-left .fa-chevron-left{
     display:none;
+
 }
 .right-details-hidden{
     transform: translatex(130%);
@@ -272,6 +276,9 @@ nav ul{
 .card-right .fa-chevron-right{
     display:none;
 }
+.project-card:hover h2 {
+    color: var(--highlight);
+}
 
 /* .card-left:hover .details{
     transform: translatex(-80%);
@@ -281,58 +288,73 @@ nav ul{
     transition: 0.4s;
     transform: translatex(-5%);
 } */
-.card-left .details a{
+
+.details-git-link:hover{
+    color: var(--highlight);
+}
+.details-git-link:hover img{
+    background-color: var(--highlight);
+}
+.details-git-link a{
     display:flex;
     flex-wrap:wrap;
-    width:60%;
+    width:100%;
     margin:0 auto;
+    position: absolute;
+    top:80%;
+    left:18%;
+    
 }
-.card-left .details img{
+.details-git-link a:active, a:focus {
+    outline: 0;
+    border: none;
+    outline-style: none;
+    -moz-outline-style: none;
+}
+.details-git-link img{
+    margin-top:18px;
+    margin-right:5px;
+    width:30px;
+    height:30px;
+    transition: background-color 0.3s ease;
+}
+.details-git-link .details img{
     margin-top:18px;
     margin-right:20px;
     width:30px;
     height:30px;
     transition: background-color 0.3s ease;
 }
-.card-left .details img:hover{
+
+/* .details img:hover{
     box-shadow: 0px 0px 5px var(--highlight);
     background-color: rgba(253, 186, 0, 0.466);
+} */
+.demo-link{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    margin:0 auto;
+    position: absolute;
+    top:80%;
+    left:60%;
+
 }
 
 /* RIGHT CARDS */
 .card{
     overflow: hidden;
 }
-.card-right .details {
-
-    transition-timing-function: ease-in;
-    transition: 0.6s;
-    height:110%;
-    background-color: var(--dark);
-    padding-top:20px;
-    padding-left:20%;
-    padding-right:20%;
-    margin-top:-30px;
-    color: var(--highlight);
-    text-align: center;
-}
-
-.card-right .details a{
-    display:flex;
-    flex-wrap:wrap;
-    width:60%;
-    margin:0 auto;
-}
 .card-left .details i {
     position: relative;
-    right:-74%;
+    right:-56%;
     bottom:-35%;
     font-size: 3.8rem;
     transition: all .15s ease-in-out;
 }
 .card-right .details i {
     position: relative;
-    left:-74%;
+    left:-56%;
     bottom:-35%;
     font-size: 3.8rem;
     transition: all .15s ease-in-out;
@@ -340,18 +362,19 @@ nav ul{
 .details i:hover {
     transform: scale(1.1);
 }
+.card-right .details {
+    transition-timing-function: ease-in;
+    transition: 0.6s;
+    height:110%;
+    background-color: var(--dark);
+    padding-top:20px;
+    padding-left:10%;
+    padding-right:10%;
+    margin-top:-30px;
+    color: var(--highlight);
+    text-align: center;
+}
 
-.card-right .details img{
-    margin-top:18px;
-    margin-right:20px;
-    width:30px;
-    height:30px;
-    transition: background-color 0.3s ease;
-}
-.card-right .details img:hover{
-    box-shadow: 0px 0px 5px var(--highlight);
-    background-color: rgba(253, 186, 0, 0.466);
-}
 /* PROJECTS SECTION - UP */
 
 
@@ -633,13 +656,12 @@ a:hover{
         width:60%;
         max-width:600px;
     }
-    .projects-section h2{
-        margin-bottom:0px;
-    }
+
 
     .projects-section h2{
         width:90%;
     }
+
     .intro-section h1{
         font-size: 5.0rem;
         margin-top:70px;
