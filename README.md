@@ -2,7 +2,7 @@
 
 Portfolio of my webdev projects, with links to contact info and CV.
 
-Check it out [HERE](https://quibbly.github.io/)
+Check it out [HERE](https://OwenM-Edwards.github.io/)
 
 ## Created using
    * HTML
