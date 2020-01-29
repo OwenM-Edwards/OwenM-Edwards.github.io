@@ -178,6 +178,7 @@ nav ul{
     margin-top:-50px;
     width:100%;
     opacity: 1;
+    font-size: 1.1rem;
 }
 .projects-section h2{
     background-color:var(--dark);
@@ -216,7 +217,7 @@ nav ul{
     margin-bottom:300px;
 }
 #card-a{
-    background-image: url("../img/thumbnails/oakfieldIm.png");
+    background-image: url("../img/thumbnails/NPC-GEN-Thumb.png");
     background-position: top center;
     background-size: cover;
     height:400px;
@@ -225,7 +226,7 @@ nav ul{
     width:90%;
 }
 #card-b{
-    background-image: url("../img/thumbnails/brainApp.jpg");
+    background-image: url("../img/thumbnails/oakfieldIm.png");
     background-position: top center;
     background-size: cover;
     height:400px;
@@ -234,7 +235,7 @@ nav ul{
     width:90%;
 }
 #card-c{
-    background-image: url("../img/thumbnails/keyborders.png");
+    background-image: url("../img/thumbnails/brainApp.jpg");
     background-position: top center;
     background-size: cover;
     height:400px;
