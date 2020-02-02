@@ -20,7 +20,7 @@ const copyToClipboard = str => {
     }
 };
 
-// Changes text upon to indicate it has been copied
+// Changes text upon click to indicate it has been copied
 const emailLink = document.querySelectorAll("#navEmail");
 for(var i=0;i<emailLink.length;i++){
     emailLink[i].addEventListener("click", function() {
