@@ -174,12 +174,14 @@ nav ul{
 /* PROJECT CARDS */
 #projects-header{
     margin:0 auto;
-    width:100%;
+    width:90%;
     color: #ededed;
     font-size: 1.9rem;
     height:100px;
     background-color: var(--dark);
-    margin-bottom:50px;
+    margin-bottom:40px;
+    position: relative;
+    top:50px;
 }
 
 .project-section{
@@ -655,6 +657,7 @@ a:hover{
     }
     #projects-header{
         margin-top:-70px;
+        margin-bottom:20px;
     }
     .projects-section-cardContainer{
         width:100%;
@@ -685,6 +688,10 @@ a:hover{
         
         max-width:600px;
         margin-bottom:100px;
+    }
+    #projects-header{
+        margin-top:-70px;
+        margin-bottom:-90px;
     }
 }
 
