@@ -221,26 +221,30 @@ nav ul{
 #cardA { 
     grid-area: cardA; 
     background-color: var(--background);
-   -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
 }
 #cardB { 
     grid-area: cardB; 
     background-color: var(--background);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
+
+
 }
 #cardC { 
     grid-area: cardC; 
     background-color: var(--background);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
 }
 #cardD { 
     grid-area: cardD; 
     background-color: var(--background);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 94%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 90%);
+
+
 }
 .cardWindow{
     margin:0 auto;
